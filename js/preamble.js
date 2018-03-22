@@ -1,7 +1,7 @@
 document.getElementById("preamblejs").innerHTML =
 '	<!-- Scripts -->'+
 '	<script src="https://www.w3schools.com/lib/w3.js"></script>'+
-'	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>'+
+'	<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>'+
 '	<script src="js/highlight-menu.js"></script>'+
 '	<!-- Styles -->'+
 '	<link href="./css/css.css" media="screen" rel="stylesheet" type="text/css">'+
