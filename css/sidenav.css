@@ -1,0 +1,121 @@
+.sidenav {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a00000;
+    overflow-x: hidden;
+}
+
+.sidenav-right {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #a00000;
+    overflow-x: hidden;
+}
+
+.mylogo {
+  //display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  margin-bottom: 20%;
+  content:url(../img/icons/vavala-logo-white.png);
+  width: 80%;
+  //height:100%;
+  //align: center;vertical-align: middle;
+  //float:left;
+  //flex: 1;
+}
+
+.mylogo-right {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  margin-bottom: 20%;
+  content:url(../img/icons/vavala-logo-white.png);
+  width: 80%;
+  opacity: 0.0;
+}
+
+.sidenav a {
+    padding: 10px 5px 10px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    display: block;
+    font-family: "Open Sans Condensed";	
+}
+.sidenav-right a {
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    display: block;
+    font-family: "Open Sans Condensed";	
+}
+
+
+.sidenav img {
+    vertical-align: middle;
+    display: inline-block;
+    width:40px;
+}
+.sidenav-right img {
+    vertical-align: middle;
+    display: inline-block;
+    width:40px;
+}
+
+
+.menutext{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.sidenav li {
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5%;
+}
+.sidenav li a {
+    text-align: left;
+}
+.sidenav a:hover {
+    color: #a00000;
+    background-color: white;   
+}
+.sidenav li a.highlight {
+	color: #a00000;
+    	background-color: white;   
+}
+.sidenav a.highlight .sub { border-radius: 100%;background-color: #a00000;}
+.sidenav a:hover .sub { border-radius: 100%;background-color: #a00000;}
+
+
+.sidenav-right li {
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5%;
+}
+.sidenav-right li a {
+    text-align: left;
+}
+.sidenav-right a:hover {
+    color: #a00000;
+    background-color: white;   
+}
+.sidenav-right li a.highlight {
+	color: #a00000;
+    	background-color: white;   
+}
+.sidenav-right a.highlight .sub { border-radius: 100%;background-color: #a00000;}
+.sidenav-right a:hover .sub { border-radius: 100%;background-color: #a00000;}

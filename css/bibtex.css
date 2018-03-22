@@ -1,0 +1,121 @@
+.YEAR { 
+  color: #aa0000;
+  font-size: 12px; 
+  display: inline; 
+  content: "";
+}
+
+.bibliogr {
+  display: table;
+  font-family: 'Avenir Next';
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+}
+
+
+.bibliogr .bibitem {
+  border: solid #a00000 2px;
+  margin: 20px;
+}
+.bibliogr .bibitem:hover {
+  background: rgba(160, 0, 0, 0.1);
+}
+
+.bibliogr .bibitem .bibheader {
+}
+
+.bibliogr .bibitem .bibheader .bibheader_container {
+  color: #a00000;
+  width: 100%;
+  width-max: 100%;
+  display: inline;
+  float: left;
+}
+.bibliogr .bibitem .bibheader_container .bibheader_single {
+  width-max: calc(99% / 2);
+  width: calc(99% / 2);
+  display: inline;
+}
+.bibheader_single:first-of-type {
+  float: left;
+  text-align: left;
+  font-size: 10px;
+}
+.bibheader_single:nth-of-type(2) {
+  text-align: right;
+  float: right;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;  
+}
+
+.bibheader_single:nth-of-type(2) span {
+  background: rgba(160, 0, 0, 0.1);
+}
+
+.bibliogr .bibitem .bibtitle {
+  color: #a00000;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bibliogr .bibitem .bibauthor {
+  font-style: extrabold;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.bibliogr .bibitem .bibconf {
+  font-style: italic;
+  font-size: 16px;
+  border-bottom: 1px solid #a00000;
+}
+
+.bibliogr .bibitem .bibabstract:before {
+  content: "Abstract. ";
+}
+
+.bibliogr .bibitem .bibabstract {
+  font-size: 12px;
+  border-bottom: 1px solid #a00000;
+}
+
+.bibliogr .bibitem .biblinks {
+}
+
+.bibliogr .bibitem .biblink_container {
+  width: calc(100% / 3);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a00000;
+}
+.biblink_container:first-of-type .biblink_single:before{
+  content: "[paper]";
+}
+.biblink_container:nth-of-type(2) .biblink_single:before{
+  content: "[slides]";
+}
+.biblink_container:nth-of-type(3) .biblink_single:before{
+  content: "[github]";
+}
+.bibliogr .bibitem .biblink_container .a {
+  href = '';
+}
+.bibliogr .bibitem .biblink_container .a:link {
+  href = '';
+}
+
+.biblink_container .biblink_single:hover{
+  color: white;
+  background: #a00000;
+}
+.BiblinkIsDisabled {
+  color: rgba(160, 0, 0, 0.5);
+  font-weight: 300;
+  text-decoration: line-through;
+  cursor: not-allowed;
+  pointer-events: none;
+}

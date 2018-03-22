@@ -1,0 +1,95 @@
+
+
+@inproceedings{Vavala2017,
+abstract = {Outsourcing services to third-party providers comes with a high security cost, to fully trust the providers. Using trusted hardware can help, but current trusted execution environments do not adequately support services that process very large scale datasets. We present LAST-GT, a system that bridges this gap by supporting the execution of self-contained services over a large state, with a small and generic trusted computing base (TCB). LAST-GT uses widely deployed trusted hardware to guarantee integrity and verifiability of the execution on a remote platform, and it securely supplies data to the service through simple techniques based on virtual memory. As a result, LAST-GT is general and applicable to many scenarios such as computational genomics and databases, as we show in our experimental evaluation based on an implementation of LAST-GT on a secure hypervisor. We also describe a possible implementation on Intel SGX.},
+author = {Vavala, Bruno and Neves, Nuno and Steenkiste, Peter},
+booktitle = {Proceedings of the 47th IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
+month = {jun},
+title = {{Secure Tera-scale Data Crunching with a Small TCB}},
+year = {2017}
+}
+
+@inproceedings{Vavala2015,
+author = {Vavala, Bruno and Neves, Nuno and Steenkiste, Peter},
+booktitle = {Proceedings of the 34st IEEE Symposium on Reliable Distributed Systems (SRDS)},
+pages = {176--181},
+title = {{Securing Passive Replication Through Verification}},
+year = {2015},
+abstract = {We show how to leverage trusted computing technology to design an efficient fully-passive replicated system tolerant to arbitrary failures. The system dramatically reduces the complexity of a fault-tolerant service, in terms of protocols, messages, data processing and non-deterministic operations. Our replication protocol enables the execution of a single protected service, replicating only its state, while allowing the backup replicas to check the correctness of the results. We implemented our protocol on Trusted Computing (TC) technology and compared it with two recent replication systems.}
+}
+
+@inproceedings{Vavala2016,
+author = {Vavala, Bruno and Neves, Nuno and Steenkiste, Peter},
+booktitle = {Proceedings of the 46th IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},
+doi = {10.1109/DSN.2016.45},
+isbn = {978-1-4673-8891-7},
+month = {jun},
+pages = {419--430},
+title = {{Secure Identification of Actively Executed Code on a Generic Trusted Component}},
+year = {2016},
+abstract = {Code identity is a fundamental concept for authenticated operations in Trusted Computing. In today's approach, the overhead of assigning an identity to a protected service increases linearly with the service code size. In addition, service code size continues to grow to accommodate richer services. This trend negatively impacts either the security or the efficiency of current protocols for trusted executions.We present an execution protocol that breaks the dependency between the code size of the service and the identification overhead, without affecting security, and that works on different trusted components. This is achieved by computing an identity for each of the code modules that are actually executed, and then building a robust chain of trust that links them together for efficient verification. We implemented and applied our protocol to a widely-deployed database engine, improving query-processing time up to 2? compared to the monolithic execution of the engine.}
+}
+
+@article{Mei2012,
+author = {Mei, Alessandro and Piroso, Natascia and Vavala, Bruno},
+doi = {10.1016/j.jpdc.2012.01.010},
+issn = {07437315},
+journal = {Journal of Parallel and Distributed Computing},
+month = {apr},
+number = {4},
+pages = {475--488},
+title = {{Fine grained load balancing in multi-hop wireless networks}},
+volume = {72},
+year = {2012},
+abstract = {In this paper we address the problem of local balancing in multi-hop wireless networks. We introduce the notion of proactive routing: After a short pre-processing phase in which nodes build their routing tables by exchanging messages with neighbors, we require that nodes decide the relay of each message without any further interaction with other nodes. Besides delivering very low communication overhead, proactive routing protocols are robust against some well known active attacks to network routing. In this framework, we develop a proactive routing protocol that is able to balance the local load. Experiments show that our protocol improves network lifetime up to 98% and that it delivers a network that is more robust against attacks that have the goal of getting control over a large part of the network traffic.}
+}
+
+@inproceedings{Vavala2010,
+author = {Vavala, Bruno and Neves, Nuno and Moniz, Henrique and Ver{\'{i}}ssimo, Paulo E.},
+booktitle = {Proceedings of the 3rd International Conference on Dependability (DEPEND)},
+pages = {7--12},
+title = {{Randomized Consensus in Wireless Environments: a Case Where More is Better}},
+year = {2010},
+award = {Best Paper Award},
+abstract = {In many emerging wireless scenarios, consensus among nodes represents an important task that must be accomplished in a timely and dependable manner. However, the sharing of the radio medium and the typical communication failures of such environments may seriously hinder this operation. In the paper, we perform a practical evaluation of an existing randomized consensus protocol that is resilient to message collisions and omissions. Then, we provide and analyze an extension to the protocol that adds an extra message exchange phase. In spite of the added time complexity, the experiments confirm that our extension and some other implementation heuristics non-trivially boost the speed to reach consensus. Furthermore, we show that the speed-up holds also under particularly bad network conditions. As a consequence, our contribution turns out to be a viable and energy-efficient alternative for critical applications.}
+}
+
+@inproceedings{Vavala2012,
+author = {Vavala, Bruno and Neves, Nuno},
+booktitle = {Proceedings of the 31st IEEE Symposium on Reliable Distributed Systems (SRDS)},
+doi = {10.1109/SRDS.2012.62},
+isbn = {978-1-4673-2397-0},
+keywords = {asynchronous model,message passing,normal situations,randomized consensus,speculative algorithm},
+pages = {161--170},
+title = {{Robust and Speculative Byzantine Randomized Consensus with Constant Time Complexity in Normal Conditions}},
+year = {2012},
+abstract = {Randomized Byzantine Consensus can be an interesting building block in the implementation of asynchronous distributed systems. Despite its exponential worst-case complexity, which would make it less appealing in practice, a few experimental works have argued quite the opposite. To bridge the gap between theory and practice, we analyze a well-known state-of-the-art algorithm in normal system conditions, in which crash failures may occur but no malicious attacks, proving that it is fast on average. We then leverage our analysis to improve its best-case complexity from three to two phases, by reducing the communication operations through speculative executions. Our findings are confirmed through an experimental validation.}
+}
+
+@techreport{Vavala2017a,
+author = {Vavala, Bruno},
+school = {Carnegie Mellon University},
+title = {{Secure Large-Scale Outsourced Services Founded on Trustworthy Code Executions}},
+report = {School of Computer Science, Carnegie Mellon University (CMU) and Faculty of Sciences, University of Lisbon (FCUL)},
+year = {2017},
+hiderefereed = {}
+}
+
+@article{Vavala2011,
+author = {Vavala, Bruno and Moniz, Henrique and Neves, Nuno and Ver{\'{i}}ssimo, Paulo},
+journal = {International Journal on Advances in Intelligent Systems},
+number = {1 {\&} 2},
+pages = {1--12},
+title = {{Randomized Consensus in Wireless Environments}},
+volume = {4},
+year = {2011},
+abstract = {In many emerging wireless scenarios, consensus among nodes represents an important task that must be accomplished in a timely and dependable manner. However, the sharing of the radio medium and the typical communication failures of such environments may seriously hinder this operation. In the paper, we perform a practical evaluation of an existing randomized consensus protocol that is resilient to message collisions and omissions. Then, we provide and analyze an extension to the protocol that adds an extra message exchange phase. In spite of the added time complexity, the experiments confirm that our extension and some other implementation heuristics non-trivially boost the speed to reach consensus. Furthermore, we describe an interesting relationship with a totally different protocol, which explains why the speed-up holds and improves also under particularly bad network conditions. As a consequence, our contribution turns out to be a viable and energy-efficient alternative for critical applications.}
+}
+
+@article{Neves2011,
+author = {Neves, Nuno and Costa, Antonio and Bessani, Alysson and Vavala (contributor), Bruno},
+report = {Management of Security Information and Events in Service Infrastructures (MASSIF)  FP7-25747 EU-Project Deliverable},
+title = {{D5.1.1 - Preliminary Resilient Framework Architecture}},
+abstract = {Vulnerability discovery, analysis and exploitation in AlienValut OSSIM v.2.3.},
+year = {2011}
+}
