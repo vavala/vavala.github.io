@@ -1,6 +1,6 @@
 @font-face {
   font-family: Avenir-Next;
-  src: url(http://fonts.gstatic.com/s/nunito/v9/6TbRXKWJjpj6V2v_WyRbMevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  src: url("../fonts/nunito.woff2) format('woff2');
   font-weight: 300;
   font-style: italic;
 }
