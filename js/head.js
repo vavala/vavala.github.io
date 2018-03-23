@@ -5,8 +5,7 @@ document.write("<link rel='icon' type='image/png' href='img/icons/vavala-logo.pn
 //	fileref.setAttribute("rel", "icon");
 //        fileref.setAttribute("href", filename);
 //}
-
-seticon("vavala-logo.pngc");
+//seticon("vavala-logo.pngc");
 
 document.write("<title>*****</title>");
 
