@@ -22,8 +22,15 @@ $(document).ready(function(){
         $('a[href]').each(function(){ 
 		if($(this).attr('class') == "bibtexVar") {
 			if(doesFileExist($(this).attr('href')) == false ) {
-				$(this).attr("href", "#"); // Set herf value
-	    			$(this).addClass("BiblinkIsDisabled");
+				//try fallback to .html extension
+				//append .html extension to link
+				$(this).attr("href", $(this).attr('href') + ".html");
+				//check again if resource exists
+				if(doesFileExist($(this).attr('href')) == false ) {
+					//even .html extension failed => disable it
+					$(this).attr("href", "#"); // Set href value to hashtag
+					$(this).addClass("BiblinkIsDisabled");
+				}
 			}
 		}
         });
