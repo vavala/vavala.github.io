@@ -27,7 +27,8 @@ month = {jun},
 pages = {419--430},
 title = {{Secure Identification of Actively Executed Code on a Generic Trusted Component}},
 year = {2016},
-abstract = {Code identity is a fundamental concept for authenticated operations in Trusted Computing. In today's approach, the overhead of assigning an identity to a protected service increases linearly with the service code size. In addition, service code size continues to grow to accommodate richer services. This trend negatively impacts either the security or the efficiency of current protocols for trusted executions.We present an execution protocol that breaks the dependency between the code size of the service and the identification overhead, without affecting security, and that works on different trusted components. This is achieved by computing an identity for each of the code modules that are actually executed, and then building a robust chain of trust that links them together for efficient verification. We implemented and applied our protocol to a widely-deployed database engine, improving query-processing time up to 2? compared to the monolithic execution of the engine.}
+abstract = {Code identity is a fundamental concept for authenticated operations in Trusted Computing. In today's approach, the overhead of assigning an identity to a protected service increases linearly with the service code size. In addition, service code size continues to grow to accommodate richer services. This trend negatively impacts either the security or the efficiency of current protocols for trusted executions.
+We present an execution protocol that breaks the dependency between the code size of the service and the identification overhead, without affecting security, and that works on different trusted components. This is achieved by computing an identity for each of the code modules that are actually executed, and then building a robust chain of trust that links them together for efficient verification. We implemented and applied our protocol to a widely-deployed database engine, improving query-processing time up to 2? compared to the monolithic execution of the engine.}
 }
 
 @article{Mei2012,
@@ -92,4 +93,36 @@ report = {Management of Security Information and Events in Service Infrastructur
 title = {{D5.1.1 - Preliminary Resilient Framework Architecture}},
 abstract = {Vulnerability discovery, analysis and exploitation in AlienValut OSSIM v.2.3.},
 year = {2011}
+}
+
+@inproceedings{Al-Raisi2018,
+  author    = {Al{-}Raisi, Fatima and Alam, Shadab and Vavala, Bruno and Liu, Sheng Mao},
+  title     = {Do Actions Speak Louder Than Words? Predicting Influence in Twitter
+               using Language and Action Features},
+  booktitle = {Proceedings of the 2018 Federated Conference on Computer Science and
+               Information Systems (FedCSIS)},
+  pages     = {457--464},
+  year      = {2018},
+  url       = {https://doi.org/10.15439/2018F304},
+  doi       = {10.15439/2018F304},
+  abstract = {This work explores the connection between language, personality, and influence in a social media network. It clusters users based on two types of features: account activity features and stream content (word) features and compares the usefulness of these different types of features in categorizing users according to their influence and leadership potential in the network. Results of clustering using different sets of features are examined to answer questions about distribution of Twitter users from the influence perspective. These results are compared against distributions of personality traits obtained from previous research on personality types and established assessment tools that measure leadership aptitude and style. Experiments with different clustering algorithms are described and their performance and cluster outputs are reported.}
+}
+
+@article{Bowman2018,
+  author    = {Bowman, Mic and Miele, Andrea and Steiner, Michael and Vavala, Bruno},
+  title     = {Private Data Objects: an Overview},
+  report   = {arXiv, CoRR},
+  volume    = {abs/1807.05686},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1807.05686},
+  abstract = {We present Private Data Objects (PDOs), a technology that enables mutually untrusted parties to run smart contracts over private data. PDOs result from the integration of a distributed ledger and Intel Software Guard Extensions (SGX). In particular, contracts run off-ledger in secure enclaves using Intel SGX, which preserves data confidentiality, execution integrity and enforces data access policies (as opposed to raw data access). A distributed ledger verifies and records transactions produced by PDOs, in order to provide a single authoritative instance of such objects. This allows contracting parties to retrieve and check data related to contract and enclave instances, as well as to serialize and commit contract state updates. The design and the development of PDOs is an ongoing research effort, and open source code is available and hosted by Hyperledger Labs.}
+}
+
+@inproceedings{Gunn2019,
+author = {Gunn, Lachlan and Liu, Jian and Vavala, Bruno and Asokan, N.},
+booktitle = {Proceedings of the 38st IEEE Symposium on Reliable Distributed Systems (SRDS)},
+pages = {161--170},
+title = {{Making Speculative BFT Resilient with Trusted Monotonic Counters}},
+year = {2019},
+abstract = {Consensus mechanisms used by popular distributed ledgers are highly scalable but notoriously inefficient. Byzantine fault tolerance (BFT) protocols are efficient but far less scalable. Speculative BFT protocols such as Zyzzyva and Zyzzyva5 are efficient and scalable but require a trade-off: Zyzzyva requires only 3f + 1 replicas to tolerate f faults, but even a single slow replica will make Zyzzyva fall back to more expensive non-speculative operation. Zyzzyva5 does not require a non- speculative fallback, but requires 5f + 1 replicas in order to tolerate f faults. BFT variants using hardware-assisted trusted components can tolerate a greater proportion of faults, but require that every replica have this hardware.We present SACZyzzyva, addressing these concerns: resilience to slow replicas and requiring only 3f + 1 replicas, with only one replica needing an active monotonic counter at any given time.We experimentally evaluate our protocols, demonstrating low latency and high scalability. We prove that SACZyzzyva is optimally robust and that trusted components cannot increase fault tolerance unless they are present in greater than two-thirds of replicas.}
 }
