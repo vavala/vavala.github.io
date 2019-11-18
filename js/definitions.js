@@ -1,6 +1,6 @@
 var string_brunovavala = "Bruno Vavala";
 var string_research = "Research";
-var string_intelligendusest = "Intelligendus Est";
+var string_intelligo = "Intelligo";
 var string_github = "Github";
 var string_twitter = "Twitter";
 var string_publications = "Publications";
@@ -13,8 +13,8 @@ var i;for (i = 0; i < tr.length; i++) {tr[i].innerHTML = string_brunovavala;}
 var tr = document.getElementsByClassName("text-research");
 var i;for (i = 0; i < tr.length; i++) {tr[i].innerHTML = string_research;}
 
-var tr = document.getElementsByClassName("text-intelligendusest");
-var i;for (i = 0; i < tr.length; i++) {tr[i].innerHTML = string_intelligendusest;}
+var tr = document.getElementsByClassName("text-intelligo");
+var i;for (i = 0; i < tr.length; i++) {tr[i].innerHTML = string_intelligo;}
 
 var tr = document.getElementsByClassName("text-github");
 var i;for (i = 0; i < tr.length; i++) {tr[i].innerHTML = string_github;}
