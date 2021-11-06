@@ -1,1 +1,1 @@
-document.write("<div class='mycopyright'>Copyright &#9400; 2019 Bruno Vavala</div>");
+document.write("<div class='mycopyright'>Copyright &#9400; Bruno Vavala</div>");
