@@ -11,6 +11,7 @@ document.getElementById("preamblejs").innerHTML =
 '	<link href="./css/fingerpaint.css" rel="stylesheet">'+
 '	<link href="./css/nunito.css" rel="stylesheet">'+
 '	<link href="./css/opensanscondensed.css" rel="stylesheet">'+
+'	<meta http-equiv="cache-control" content="no-cache">'+
+'	<meta http-equiv="expires" content="0">'+
+'	<meta http-equiv="pragma" content="no-cache">'+
 '	<meta http-equiv="X-UA-Compatible" content="IE=Edge">';
-
-
