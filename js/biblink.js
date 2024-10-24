@@ -21,6 +21,11 @@ function DisableBadBibLinks()
 $(document).ready(function(){
         $('a[href]').each(function(){ 
 		if($(this).attr('class') == "bibtexVar") {
+			if($(this).attr('href').search("BIBTEXKEY") != -1) {
+				console.log("skip link with BIBTEXKEY: ", $(this).attr('href'))
+				return
+			}
+			
 			if(doesFileExist($(this).attr('href')) == false ) {
 				//try fallback to .html extension
 				//append .html extension to link
