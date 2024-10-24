@@ -43,8 +43,9 @@ $(document).ready(function(){
 }
 
 document.onreadystatechange = function () {
-     if (document.readyState == "complete") {
-     // document is ready. Do your stuff here
-	DisableBadBibLinks();
+	console.log("Ready state changed triggered: ", document.readyState)
+	if (document.readyState == "complete") {
+		// document is ready. Do your stuff here
+		DisableBadBibLinks();
    }
 }
