@@ -118,11 +118,21 @@ year = {2011}
   abstract = {We present Private Data Objects (PDOs), a technology that enables mutually untrusted parties to run smart contracts over private data. PDOs result from the integration of a distributed ledger and Intel Software Guard Extensions (SGX). In particular, contracts run off-ledger in secure enclaves using Intel SGX, which preserves data confidentiality, execution integrity and enforces data access policies (as opposed to raw data access). A distributed ledger verifies and records transactions produced by PDOs, in order to provide a single authoritative instance of such objects. This allows contracting parties to retrieve and check data related to contract and enclave instances, as well as to serialize and commit contract state updates. The design and the development of PDOs is an ongoing research effort, and open source code is available and hosted by Hyperledger Labs.}
 }
 
+@article{Mukerjee2012,
+  author    = {Mukerjee, Matthew and Naylor, David and Vavala, Bruno},
+  title     = {Packet Processing on the GPU},
+  report    = {Carnegie Mellon University, CSD},
+  year      = {2012},
+  abstract  = {Packet processing in routers is traditionally implemented in hardware; specialized ASICs are employed to forward packets at line rates of up to 100 Gbps. Recently, how- ever, improving hardware and an interest in complex packet processing has prompted the networking community to explore software routers; though they are more flexible and easier to program, achieving forwarding rates com- parable to hardware routers is challenging. Given the highly parallel nature of packet processing, a GPU-based router architecture is an inviting option (and one which the community has begun to explore). In this project, we explore the pitfalls and payoffs of implement- ing a GPU-based software router.}
+}
+
 @inproceedings{Gunn2019,
 author = {Gunn, Lachlan and Liu, Jian and Vavala, Bruno and Asokan, N.},
 booktitle = {Proceedings of the 38st IEEE Symposium on Reliable Distributed Systems (SRDS)},
 pages = {161--170},
 title = {{Making Speculative BFT Resilient with Trusted Monotonic Counters}},
 year = {2019},
-abstract = {Consensus mechanisms used by popular distributed ledgers are highly scalable but notoriously inefficient. Byzantine fault tolerance (BFT) protocols are efficient but far less scalable. Speculative BFT protocols such as Zyzzyva and Zyzzyva5 are efficient and scalable but require a trade-off: Zyzzyva requires only 3f + 1 replicas to tolerate f faults, but even a single slow replica will make Zyzzyva fall back to more expensive non-speculative operation. Zyzzyva5 does not require a non- speculative fallback, but requires 5f + 1 replicas in order to tolerate f faults. BFT variants using hardware-assisted trusted components can tolerate a greater proportion of faults, but require that every replica have this hardware.We present SACZyzzyva, addressing these concerns: resilience to slow replicas and requiring only 3f + 1 replicas, with only one replica needing an active monotonic counter at any given time.We experimentally evaluate our protocols, demonstrating low latency and high scalability. We prove that SACZyzzyva is optimally robust and that trusted components cannot increase fault tolerance unless they are present in greater than two-thirds of replicas.}
+abstract = {Consensus mechanisms used by popular distributed ledgers are highly scalable but notoriously inefficient. Byzantine fault tolerance (BFT) protocols are efficient but far less scalable. Speculative BFT protocols such as Zyzzyva and Zyzzyva5 are efficient and scalable but require a trade-off: Zyzzyva requires only 3f + 1 replicas to tolerate f faults, but even a single slow replica will make Zyzzyva fall back to more expensive non-speculative operation. Zyzzyva5 does not require a non- speculative fallback, but requires 5f + 1 replicas in order to tolerate f faults. BFT variants using hardware-assisted trusted components can tolerate a greater proportion of faults, but require that every replica have this hardware.
+We present SACZyzzyva, addressing these concerns: resilience to slow replicas and requiring only 3f + 1 replicas, with only one replica needing an active monotonic counter at any given time.
+We experimentally evaluate our protocols, demonstrating low latency and high scalability. We prove that SACZyzzyva is optimally robust and that trusted components cannot increase fault tolerance unless they are present in greater than two-thirds of replicas.}
 }
