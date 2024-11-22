@@ -32,7 +32,7 @@ header h1 {
 
 .mypic {
   content:url(../img/mypic.jpg);
-  width: 55%;
+  width: 40%;
   //height:100%;
   align: center;vertical-align: middle;
   float:left;
@@ -50,30 +50,32 @@ ul {
 .mycard {
   //flex: 1;
   //display:inline-block; 
-  float:left;
-  width: 42%;
-  margin-left: 2%;
-  margin-right: 0%;
+  //float:left;
+  //margin-top: 25%;
+  text-align: center;
+  //width: 40%;
+  //margin-left: auto;
+  //margin-right: auto;
   font-family: 'Nunito Sans';font-size: 20px;
 }
 .mycard .mylogos {
-  display: flex;
-  align-items: center;
-  margin-top: 15%;
+  //display: flex;
+  //align-items: center;
+  margin-top: 5%;
+  text-align: center;
 }
 .mycard .mylogos .fcullogo {
   content:url('../img/logos/logo-fcul.png');
-  width: 25%;
+  width: 9%;
   float:left;
-  margin-left: auto;
-  margin-right: 10%;
+  margin-left: 14%;
+  margin-right: 14%;
 }
 .mycard .mylogos .cmulogo {
   content:url('../img/logos/logo-cmu.png');
-  width: 30%;
-  float: right;
-  margin-left: 10%;
-  margin-right: auto;
+  width: 10%;
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
 .presentation:after {
@@ -93,7 +95,9 @@ ul {
 .myintroduction {
   font-family: 'Nunito Sans';font-size: 18px;
   text-color: black;
-  margin-top: 3%;
+  margin-top: 2%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .mycopyright {
